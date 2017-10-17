@@ -1,6 +1,11 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <circle-menu class="the-menu" type="bottom" :number="4" animate="animated jello" mask='black' btn='true' circle>
+      <a slot="item_1" class="fa fa-twitter fa-lg"></a>
+      <a slot="item_2" class="fa fa-weixin fa-lg"></a>
+      <a slot="item_3" class="fa fa-weibo fa-lg"></a>
+      <a slot="item_4" class="fa fa-github fa-lg"></a>
+    </circle-menu>
     <router-view/>
   </div>
 </template>
@@ -19,5 +24,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.the-menu {
+  float: left;
 }
 </style>
