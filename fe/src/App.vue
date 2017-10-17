@@ -3,7 +3,7 @@
   
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-    <div>
+    <div id="the-menu">
     <nav class="menu">
       <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
       <label class="menu-open-button" for="menu-open">
@@ -18,7 +18,6 @@
       <a href="#" class="menu-item"> <i class="fa fa-envelope"></i> </a>
       <a href="#" class="menu-item"> <i class="fa fa-envelope"></i> </a>
     </nav>
-
 
     <!-- filters -->
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -42,7 +41,9 @@
     </svg>
     </div>
 
-    <router-view/>
+    <div id="content">
+      <router-view/>
+    </div>
   </div>
 </template>
 
@@ -53,6 +54,34 @@ export default {
 </script>
 
 <style lang="scss">
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+#the-menu {
+  height: 100%;
+  float: left;
+}
+
+nav.menu {
+  left: 5%;
+  height: 100%;
+}
+
+#content {
+  float: left;
+}
 
 //vars
 $fg:#00bcd4;
