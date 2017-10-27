@@ -9,7 +9,7 @@
     "start": "npm run dev",
     "build": "node build/build.js",
     "lint": "eslint --ext .js,.vue src",
-    "surge": "npm run build && surge -p dist/ -d david-ninja.surge.sh"
+    "surge": "npm run build && surge -p dist/ -d https://david-ninja.surge.sh"
   },
   "dependencies": {
     "vue": "^2.5.2",
