@@ -1,5 +1,5 @@
 <template>
-    <div id="the-menu">
+    <div>
     <nav class="menu">
       <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
       <label class="menu-open-button" for="menu-open">
@@ -8,9 +8,9 @@
         <span class="hamburger hamburger-3"></span>
       </label>
       
-      <a href="#" class="menu-item"> <i class="fa fa-book"></i> </a>
-      <a href="#" class="menu-item"> <i class="fa fa-heart"></i> </a>
-      <a href="#" class="menu-item"> <i class="fa fa-address-card"></i> </a>
+      <slot>
+      </slot>
+      
     </nav>
 
     <!-- filters -->
@@ -45,11 +45,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-#the-menu {
-  height: 100%;
-  float: left;
-}
-
 nav.menu {
   left: 8%;
   height: 100%;

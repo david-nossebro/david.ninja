@@ -2,7 +2,11 @@
   <div id="app">
   
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <ball-menu />
+    <ball-menu>
+      <a href="#" class="menu-item"> <i class="fa fa-book"></i> </a>
+      <a href="#" class="menu-item"> <i class="fa fa-user-circle"></i> </a>
+      <a href="#" class="menu-item"> <i class="fa fa-code"></i> </a>
+    </ball-menu>
     <div id="content">
       <router-view/>
     </div>
